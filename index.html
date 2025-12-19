@@ -10,25 +10,25 @@
 </head>
 <body>
     <main>
-        <div class="box"></div>
-        <h1>Login</h1>
-        <p>Bem-vindo(a) de volta! Faça <strong>Login</strong> para acessar sua conta.</p>
-        <form action="" method="post" autocomplete="on">
-            <div id="emailandpass">
-                <div id="email">
-                    <label for="iemail"><span class="material-symbols-outlined">person</span></label>
-                    <input type="email" name="email" id="iemail" placeholder="Email" required>
+        <section id="login">
+            <div class="box"></div>
+            <h1>Login</h1>
+            <p>Bem-vindo(a) de volta! Faça <strong>Login</strong> para acessar sua conta.</p>
+            <form action="" method="post" autocomplete="on">
+                <div id="emailandpass">
+                    <div id="email">
+                        <label for="iemail"><span class="material-symbols-outlined">person</span></label><!--person-->
+                        <input type="email" name="email" id="iemail" placeholder="Email" autocomplete="email" required>
+                    </div>
+                    <div id="pass">
+                        <label for="ipass"><span class="material-symbols-outlined">key</span></label><!--key-->
+                        <input type="password" name="pass" id="ipass" placeholder="Senha" minlength="8" maxlength="25" autocomplete="current-password" required>
+                    </div>
                 </div>
-
-                <div id="pass">
-                    <label for="ipass"><span class="material-symbols-outlined">key</span></label>
-                    <input type="password" name="pass" id="ipass" placeholder="Senha" minlength="8" maxlength="25" required>
-                </div>
-            </div>
-
-            <input type="submit" value="Entrar" id="entrada">
-            <a href="#" id="senha-perdida">Esqueci minha senha<span class="material-symbols-outlined">forward_to_inbox</span></a>
-        </form>
+                <input type="submit" value="Entrar" id="entrada">
+                <a href="#" id="senha-perdida">Esqueci minha senha<span class="material-symbols-outlined">forward_to_inbox</span></a>
+            </form>
+        </section>
     </main>
 </body>
 </html>
